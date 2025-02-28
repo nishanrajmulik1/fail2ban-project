@@ -32,7 +32,7 @@ findtime = 600
 hydra -l admin -P passwords.txt 10.0.1.111 ssh
 ```
 ![BruteForce](Screenshots/BruteForcePerfomed.png)
-![Splunk](
+![Splunk](Screenshots/banandfoundlogsonsplunkserver.png)
 ### Outcomes
 - Attack logs were successfully captured
 - The attacker IP was automatically blocked
