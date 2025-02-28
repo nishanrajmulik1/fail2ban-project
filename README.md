@@ -15,7 +15,7 @@ This project demonstrates how to use Fail2Ban to detect and prevent brute-force 
 sudo nano /etc/fail2ban/jail.local
 ```
 
-Add:
+### Add:
 ```
 [sshd]
 enabled = true
@@ -27,16 +27,16 @@ findtime = 600
 ```
 
 
-Brute-Force Attack Simulation
+### Brute-Force Attack Simulation
 ```
 hydra -l admin -P passwords.txt 10.0.1.111 ssh
 ```
 
-Outcomes
+### Outcomes
 - Attack logs were successfully captured
-- Attacker IP was automatically blocked
+- The attacker IP was automatically blocked
 - Logs were visualized in Splunk
 
-Conclusion
+### Conclusion
 This project shows how Fail2Ban can effectively prevent brute-force attacks on Linux systems. Logs provide visibility into attack patterns, enhancing security monitoring.
 
