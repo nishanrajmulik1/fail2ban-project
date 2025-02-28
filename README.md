@@ -25,13 +25,14 @@ maxretry = 3
 bantime = 600
 findtime = 600
 ```
-
+![Fail2Ban](Screenshots/Fail2BanConfiguration.png)
 
 ### Brute-Force Attack Simulation
 ```
 hydra -l admin -P passwords.txt 10.0.1.111 ssh
 ```
-
+![BruteForce](Screenshots/BruteForcePerfomed.png)
+![Splunk](
 ### Outcomes
 - Attack logs were successfully captured
 - The attacker IP was automatically blocked
